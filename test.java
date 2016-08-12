@@ -14,7 +14,7 @@ public class Main {
 
     CallableStatement proc_stmt = con.prepareCall("{ call vendor.uspTranslationRequestGet(?) }");
 
-    proc_stmt.setString(1, "2");
+    proc_stmt.setString(1, "3");
     ResultSet rs = proc_stmt.executeQuery();
 
     if (rs.next()) {
